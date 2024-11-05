@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-Shop Cadastro</title>
+    <link rel="stylesheet" href="./Src/CSS/global.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="top">
+                <span>PET</span>
+                <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/07/Cartoon-Cat-PNG.png" alt="">
+                <span>SHOP</span>
+            </div>
+            <div class="bottom">
+                <div class="triangle"></div>
+                <form id="petForm">
+                    <div class="profilePic">
+                        <div class="circle">
+                        </div>
+                    </div>
+                    <input type="text" id="petName" placeholder="Digite o nome do pet" required>
+                    <input type="text" id="petBreed" placeholder="Digite a raça do pet" required>
+                    <input type="email" id="ownerEmail" placeholder="Digite o email do dono" required>
+                    <div class="singUp">
+                        <button type="button" onclick="addOrUpdatePet()">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="list">
+            <h2>Lista de Pets Cadastrados</h2>
+            <ul id="petList"></ul>
+        </div>
+    </div>
+    <script src="./Src/JS/Script.JS"></script>
+</body>
+</html>
+
